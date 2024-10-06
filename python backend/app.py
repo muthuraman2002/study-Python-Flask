@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Create a Flask application instance
 app = Flask(__name__)
-port=8000
+port=8080
 # Define a route for the root URL
 
 # Define the database URL and create the engine
@@ -79,7 +79,7 @@ def home():
         elif request.method=='GET':
             create_user('muthu',12,'qbc',1234)
             pass
-            return "Hii BRO"
+            return "Hi Bharathi Welcome This website"
 
 
 # Define a route for another URL
