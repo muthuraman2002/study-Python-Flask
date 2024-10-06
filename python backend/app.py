@@ -2,6 +2,7 @@ from flask import Flask,request
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from bs4 import BeautifulSoup
 
 # Create a Flask application instance
 app = Flask(__name__)
