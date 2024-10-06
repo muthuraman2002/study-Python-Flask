@@ -73,11 +73,11 @@ def create_user(name: str, age: int,mail=String,phone=int):
 @app.route('/',methods=['GET','POST'])
 def home():
         if request.method =='POST':
-            create_user('muthu',12,'qbc',1234)
+            create_user('bharathi',12,'qbc',1234)
             pass
             return "Hello, World!"
         elif request.method=='GET':
-            create_user('muthu',12,'qbc',1234)
+            create_user(bharathi',12,'qbc',1234)
             pass
             return "Hi Bharathi Welcome This website"
 
