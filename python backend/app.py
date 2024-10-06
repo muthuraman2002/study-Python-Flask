@@ -2,6 +2,7 @@ from flask import Flask,request
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from bs4 import BeautifulSoup
 
 # Create a Flask application instance
 app = Flask(__name__)
@@ -73,11 +74,11 @@ def create_user(name: str, age: int,mail=String,phone=int):
 @app.route('/',methods=['GET','POST'])
 def home():
         if request.method =='POST':
-            create_user('muthu',12,'qbc',1234)
+            create_user('bharathi',12,'qbc',1234)
             pass
             return "Hello, World!"
         elif request.method=='GET':
-            create_user('muthu',12,'qbc',1234)
+            create_user(bharathi',12,'qbc',1234)
             pass
             return "Hi Bharathi Welcome This website"
 
